@@ -1,31 +1,35 @@
 # Hi, I'm Artem
 
-Python backend developer focused on AI systems and backend infrastructure.
+Python backend developer focused on AI systems, RAG pipelines, and backend infrastructure.
 
-Currently building RAG systems using FastAPI, vector search, and local LLM inference.
+Currently building a RAG assistant using FastAPI, vector search, and local LLM inference.
 
 ## Main Project
 
 ### RAG Assistant
 
-Retrieval-Augmented Generation backend with:
+Production-style Retrieval-Augmented Generation backend for question answering over a document knowledge base.
 
-- FastAPI
+- FastAPI API
 - Qdrant vector search
-- Ollama local LLM inference
-- sentence-transformers
-- Docker
+- local LLM inference via Ollama
+- embeddings and reranking with sentence-transformers / PyTorch
+- Docker / Docker Compose deployment
 
 Repository:  
 https://github.com/artemdev/rag-assistant
 
-## Architecture
+## Tech
 
-```mermaid
-flowchart TD
-    User --> API
-    API --> Retriever
-    Retriever --> Qdrant
-    Retriever --> Reranker
-    Reranker --> LLM
-    LLM --> Response
+Python • FastAPI • RAG systems • Vector search • Qdrant • LLM integration • Docker • Linux
+
+## Interests
+
+AI backend systems  
+LLM applications  
+Retrieval systems  
+Backend architecture
+
+## Open to
+
+Remote AI backend roles
