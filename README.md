@@ -2,11 +2,11 @@
 
 Python backend developer focused on AI systems and backend infrastructure.
 
-Currently building **RAG systems** using FastAPI, vector search, and local LLMs.
+Currently building RAG systems using FastAPI, vector search, and local LLM inference.
 
-## Main project
+## Main Project
 
-**RAG Assistant**
+### RAG Assistant
 
 Retrieval-Augmented Generation backend with:
 
@@ -16,9 +16,16 @@ Retrieval-Augmented Generation backend with:
 - sentence-transformers
 - Docker
 
-Repository:
+Repository:  
 https://github.com/artemdev/rag-assistant
 
-## Tech
+## Architecture
 
-Python • FastAPI • RAG • Vector search • Docker • Linux
+```mermaid
+flowchart TD
+    User --> API
+    API --> Retriever
+    Retriever --> Qdrant
+    Retriever --> Reranker
+    Reranker --> LLM
+    LLM --> Response
